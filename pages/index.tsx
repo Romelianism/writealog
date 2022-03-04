@@ -1,7 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 
 type Log = {
   author: string;
@@ -50,7 +49,7 @@ const Home: NextPage<Props> = ({ logs }) => {
         </Link>
       </header>
 
-      <main className={styles.main}>
+      <main>
         <h1>All Logs</h1>
         <ul>
           {logs.map(({ author, title, text }) => {
@@ -77,7 +76,7 @@ const Home: NextPage<Props> = ({ logs }) => {
         </ul>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/favorites">Favorites</Link>
