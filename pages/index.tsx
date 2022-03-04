@@ -36,12 +36,12 @@ const Home: NextPage<Props> = ({ logs }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <Link href="/account">
+        <Link href="/">
           <a>
             <span>Writealog</span>
           </a>
         </Link>
-        <input />
+        <input placeholder="Search" />
         <Link href="/account">
           <a>
             <span>Account</span>
@@ -81,6 +81,7 @@ const Home: NextPage<Props> = ({ logs }) => {
           <Link href="/">Home</Link>
           <Link href="/favorites">Favorites</Link>
           <Link href="/following">Following</Link>
+          <Link href="/library">library</Link>
         </nav>
       </footer>
     </>
